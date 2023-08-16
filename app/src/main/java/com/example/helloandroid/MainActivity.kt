@@ -1,5 +1,5 @@
 package com.example.helloandroid
-
+// versao 1.0
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
