@@ -12,7 +12,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.FileProvider
-import com.example.helloandroid.Manifest.*
+
 
 import com.example.helloandroid.domain.Usuario
 import java.io.File
@@ -30,12 +30,6 @@ class HomeActivity : LogActivity() {
         findViewById<TextView>(R.id.btAbrirCamera).setOnClickListener {
             onClickCamera()
         }
-
-
-
-
-
-
         if (savedInstanceState != null) {
             // (*2*) Se girou a tela recupera o estado
             file = savedInstanceState.getSerializable("file") as File
