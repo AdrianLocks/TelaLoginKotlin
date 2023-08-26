@@ -37,9 +37,7 @@ class HomeActivity : LogActivity() {
         }
         // Valida a permissão para Câmera
         val ok = PermissionUtils.request(this, arrayOf(Manifest.permission.CAMERA))
-        if (!ok) {
-            // Deixa o botão Invisível
-            findViewById<ImageButton>(R.id.btAbrirCamera).visibility = View.INVISIBLE
+        if (!ok) { findViewById<ImageButton>(R.id.btAbrirCamera).visibility = View.INVISIBLE
         }
     }
 

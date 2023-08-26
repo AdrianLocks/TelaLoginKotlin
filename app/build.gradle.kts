@@ -6,13 +6,13 @@ plugins {
 
 android {
     namespace = "com.example.helloandroid"
-    compileSdk = 31
+    compileSdk = 34
 
 
     defaultConfig {
         applicationId = "com.example.helloandroid"
         minSdk = 21
-        targetSdk = 31
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -35,6 +35,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    viewBinding{
+        enable = true
+    }
+    dataBinding{
+        enable; true
+    }
+
     buildFeatures {
         compose = true
     }
@@ -50,6 +58,11 @@ android {
 
 dependencies {
     implementation ("androidx.appcompat:appcompat:1.6.1")
+
+    //room componentes
+    implementation("androidx.room:room-ktx:2.3.0")
+
+    androidTestImplementation("androidx.room:room-testing:2.3.0")
 
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
